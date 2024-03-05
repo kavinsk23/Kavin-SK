@@ -14,7 +14,30 @@ module.exports = {
         },
       },
       fontFamily: {
-        comfortaa: ['comfortaa']
+        comfortaa: ['comfortaa'],
+        fra: ['Days One']
+      },
+      width: {
+        new: '48rem',
+      },
+      lineHeight: {
+        leading15: '4rem',
+        leading20: '6rem',
+      },
+      fontSize: {
+        text4_5xl: '2.75rem',
+      },
+      screens: {
+        screen3xl: '1920px',
+        screen4xl: '2560px',
+      },
+      height: {
+        height108: '30rem',
+        height120: '40rem',
+      },
+      width: {
+        w108: '30rem',
+        w120: '40rem',
       }
     },
   },
