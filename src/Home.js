@@ -3,10 +3,9 @@ import ProPic from "./images/profile-pic.png"
 
 export default function Home() {
     return(
-        <div className="bg-primary_2 p-3 font-comfortaa sm:p-6 lg:p-0">
+        <div className="bg-primary_2 p-3 font-comfortaa sm:p-6 lg:p-0 pb-8">
             <div className="sm:flex pb-10 lg:grid lg:grid-cols-3">
-                <div className="pr-5 sm:min-w-72 lg:p-6 lg:py-24 2xl:py-44 2xl:pl-16 screen3xl:py-60 screen3xl:pl-24
-                ">
+                <div className="pr-5 sm:min-w-72 lg:p-6 lg:py-24 2xl:py-44 2xl:pl-16 screen3xl:py-60 screen3xl:pl-24">
                     <h1 className="text-white text-3xl pb-2 font-fra sm:text-3xl sm:pb-6 lg:text-6xl xl:text-7xl xl:pb-14 2xl:text-8xl screen3xl:text-9xl screen3xl:pb-20">Hello<span
                         className="text-primary_1 font-sans">...</span></h1>
                     <h2 className="text-primary_1 font-medium text-lg sm:text-xl sm:pb-6 lg:text-2xl xl:text-4xl xl:pb-14 2xl:text-text4_5xl screen3xl:text-5xl screen3xl:pb-20">─ I'am Kavin Sashantha</h2>

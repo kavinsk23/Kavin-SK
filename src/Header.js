@@ -6,8 +6,8 @@ export default function Header() {
         <div className="font-comfortaa bg-secondary-100 text-primary_1 sm:bg-primary_1 sm:text-black" id="menu">
             <nav>
                 <div className="flex text-xs font-thin sm:justify-between sm:px-4 sm:py-4 sm:text-sm md:text-base md:w-26 lg:text-lg lg:py-6 lg:font-medium xl:text-2xl xl:py-10 xl:px-16 screen3xl:text-4xl">
-                    <a href="#" className="nav-buttons mr-2">About me</a>
-                    <a href="#" className="nav-buttons">Skills</a>
+                    <a href="./About.js" className="nav-buttons mr-2">About me</a>
+                    <a href="./Skills.js" className="nav-buttons">Skills</a>
                     <a href="#" className="nav-hdn">00</a>
                     <a href="#" className="nav-buttons font-bold sm:text-2xl sm:w-52 sm:mx-16 md:text-3xl md:w-96 md:px-10 lg:text-4xl lg:w-96 lg:px-16 xl:text-5xl xl:w-96 xl:px-14 font-fra screen3xl:text-7xl screen3xl:w-w108">Kavin SK</a>
                     <a href="#" className="nav-hdn">00</a>
@@ -16,7 +16,7 @@ export default function Header() {
                 </div>
             </nav>
 
-            <div className="flex items-center justify-between flex-1 px-2 py-3 text-xs font-thin sm:px-0 sm:py-0"> {/* Added flex-1 to make the container take up the remaining space */}
+            <div className="flex items-center justify-between flex-1 px-2 py-3 text-xs font-thin sm:px-0 sm:py-0">
                 <div>
                     <span className="text-xl font-bold sm:hidden">Kavin SK</span>
                 </div>

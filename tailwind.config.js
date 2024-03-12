@@ -32,12 +32,21 @@ module.exports = {
         screen4xl: '2560px',
       },
       height: {
+        height102: '26rem',
         height108: '30rem',
         height120: '40rem',
       },
       width: {
         w108: '30rem',
         w120: '40rem',
+        w135: '50rem',
+        w150: '60rem',
+      },
+      maxWidth: {
+        w108: '30rem',
+        w120: '40rem',
+        w135: '50rem',
+        w150: '60rem',
       }
     },
   },
