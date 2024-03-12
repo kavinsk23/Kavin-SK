@@ -13,6 +13,7 @@ export default function AllProjectLists(props) {
                 <h1 className="text-white py-2 text-3xl md:text-4xl md:py-4 lg:py-5 2xl:text-5xl screen3xl:text-6xl ">{props.workName}</h1>
                 <p className="text-secondary-200 py-2 md:text-xl 2xl:text-2xl screen3xl:text-3xl">{props.paragraph}</p>
                 <div className="flex justify-center items-center">
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a className="text-primary_1 underline py-2 font-bold pr-2 md:text-xl md:py-4 lg:py-5" href="">See More</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                          stroke="currentColor" className="w-5 h-5 sm:w-8 sm:h-8 lg:w-12 lg:h-12 text-primary_1">
