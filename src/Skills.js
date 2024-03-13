@@ -17,7 +17,7 @@ import browserstack from "./images/browserstack.png"
 
 export default function Skills() {
     return (
-        <div className="bg-primary_1 w-full h-auto">
+        <div className="bg-primary_1 w-full h-auto" id="skills">
             <div className="skill-icons-div">
                 <img className="skill-icons" src={html} alt=""/>
                 <img className="skill-icons" src={css} alt=""/>

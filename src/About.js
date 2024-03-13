@@ -3,7 +3,7 @@ import pic2 from "./images/pro-pic2.jpg"
 
 export default function About() {
     return(
-        <div className="bg-primary_2 w-full h-auto py-10 px-5 2xl:py-20">
+        <div className="bg-primary_2 w-full h-auto py-10 px-5 2xl:py-20" id="about">
             <div className="flex flex-col items-center">
                 <h3 className="text-secondary-200 pb-5 2xl:text-xl">BIOGRAPHY</h3>
                 <h1 className="text-white text-4xl pb-1 font-bold 2xl:text-5xl">Who am I?</h1>

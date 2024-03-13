@@ -30,7 +30,7 @@ export default function Projects() {
     const [activeTab, setActiveTab] = useState('uiux');
 
     return (
-        <div className="bg-secondary-100 w-full h-auto py-10 px-5 2xl:py-20">
+        <div className="bg-secondary-100 w-full h-auto py-10 px-5 2xl:py-20" id="portfolio">
             <div className="flex flex-col items-center">
                 <h3 className="text-secondary-200 pb-5 2xl:text-xl">PORTFOLIO</h3>
                 <h1 className="text-white text-4xl pb-1 font-bold 2xl:text-5xl">My Projects</h1>

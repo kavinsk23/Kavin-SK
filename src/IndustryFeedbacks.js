@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import imarsha from "./images/imarsha.png"
 import sanka from "./images/sanka.png"
 import ushan from "./images/ushan.png"
+import ruchira from "./images/ruchira.png"
 
 const testimonials = [
     {
@@ -19,6 +20,14 @@ const testimonials = [
         text: 'Kavin\'s exceptional skills and positive attitudes made every singe day a success within the team, and his dedication to excellence was truly inspiring and amazing.',
         author: 'Sanka - Associate Architect (Intervest Software Technologies)',
     },
+
+    {
+        id: 4,
+        image: ruchira,
+        text: 'Working with Kavin has been a pleasure; his willingness to learn and his team spirit truly stand out. Keep it up, Kavin!.',
+        author: 'Ruchira - Tech Lead (Intervest Software Technologies)',
+    },
+
     {
         id: 3,
         image: ushan,
