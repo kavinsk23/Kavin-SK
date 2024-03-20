@@ -20,14 +20,19 @@ export default function Home() {
                     </div>
 
                     <div className="hidden w-full flex items-center h-24 lg:flex">
-                        <button className="flex border text-secondary-100 text-lg border-primary_1 font-bold bg-primary_1 rounded-md h-14 w-52 items-center justify-center cursor-pointer hover:text-primary_1 hover:bg-primary_2 transition ease-in duration-300 xl:h-20 w-64 screen3xl:h-28 screen3xl:w-96">
+                        <button
+                            className="flex border text-secondary-100 text-lg border-primary_1 font-bold bg-primary_1 rounded-md h-14 w-52 items-center justify-center cursor-pointer hover:text-primary_1 hover:bg-primary_2 transition ease-in duration-300 xl:h-20 w-64 screen3xl:h-28 screen3xl:w-96">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                  stroke="currentColor" className="w-5 h-5 xl:w-8 xl:h-8 screen3xl:w-12 screen3xl:h-12">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                       d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"/>
                             </svg>
 
-                            <span className="pl-2 xl:text-2xl screen3xl:text-4xl">Download CV</span>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                            <span className="pl-2 xl:text-2xl screen3xl:text-4xl">
+                                <a href="./images/Kavin-CV.pdf" download="Kavin-CV.pdf" className="cv-download-link">Download CV</a>
+                            </span>
+
                         </button>
                     </div>
                 </div>
@@ -63,14 +68,18 @@ export default function Home() {
                 </div>
             </div>
             <div className="w-full flex justify-center items-center h-16 lg:hidden">
-                <button className="flex mt-8 border text-secondary-100 border-primary_1 font-bold bg-primary_1 rounded-md h-10 w-40 items-center justify-center cursor-pointer">
+                <button
+                    className="flex mt-8 border text-secondary-100 border-primary_1 font-bold bg-primary_1 rounded-md h-10 w-40 items-center justify-center cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                          stroke="currentColor" className="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round"
                               d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"/>
                     </svg>
 
-                    <span className="pl-2">Download CV</span>
+                    <span className="pl-2">
+                        <a href="./images/Kavin-CV.pdf" download="Kavin-CV.pdf" className="cv-download-link">Download CV</a>
+                    </span>
+
                 </button>
             </div>
         </div>
