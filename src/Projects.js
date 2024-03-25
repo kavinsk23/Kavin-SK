@@ -24,6 +24,10 @@ import resturant1 from "./images/resturant1.png"
 import resturant2 from "./images/resturant2.png"
 import portfolio1 from "./images/portfolio1.png"
 import portfolio2 from "./images/portfolio2.png"
+import shoe1 from "./images/shoe1.jpg"
+import shoe2 from "./images/shoe2.jpg"
+import tours1 from "./images/tours1.jpg"
+import tours2 from "./images/tours2.jpg"
 
 export default function Projects() {
     // State to manage which tab is active; default is 'UI/UX Design'
@@ -123,6 +127,22 @@ export default function Projects() {
                             titleName="Front End Development"
                             workName="Airbnb Sample"
                             paragraph="I developed a React JS-based sample Airbnb page, showcasing responsive design and user interaction. This project enhanced my React skills and understanding of user-centric web development."
+                        />
+
+                        <AllProjectLists
+                            img1={shoe1}
+                            img2={shoe2}
+                            titleName="Front End Development"
+                            workName="Shoe Shop"
+                            paragraph="I crafted a responsive e-commerce shoe shop using HTML and CSS, honing my front-end skills and prioritizing user experience."
+                        />
+
+                        <AllProjectLists
+                            img1={tours1}
+                            img2={tours2}
+                            titleName="Front End Development"
+                            workName="Travel page"
+                            paragraph="Developing a travel website, I emphasized intuitive design and responsiveness with HTML and CSS, refining my front-end abilities and user-centric approach."
                         />
 
                         {/*<AllProjectLists
