@@ -6,6 +6,7 @@ import imarsha from "./images/imarsha.png"
 import sanka from "./images/sanka.png"
 import ushan from "./images/ushan.png"
 import ruchira from "./images/ruchira.png"
+import intervest from "./images/intervest.png"
 
 const testimonials = [
     {
@@ -33,6 +34,13 @@ const testimonials = [
         image: ushan,
         text: 'Kavin\'s outstanding performance and collaborative approach were instrumental in achieving our project goals, making our working experience truly remarkable.',
         author: 'Ushan - Senior QA Engineer (Intervest Software Technologies)',
+    },
+
+    {
+        id: 3,
+        image: intervest,
+        text: 'We would like to express our sincere gratitude for choosing Intervest on this journey. We trust it has been enriching, we wish you continued success and fulfillment. Best wishes for your next chapter. We hope to welcome you back at Intervest in the future.',
+        author: 'Intervest Software Technologies',
     },
 ];
 
