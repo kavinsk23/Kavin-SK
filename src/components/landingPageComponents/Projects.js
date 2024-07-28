@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AllProjectLists from "./AllProjectLists";
@@ -30,32 +30,54 @@ import pos1 from "../../assets/images/pos1.png";
 import pos7 from "../../assets/images/pos7.png";
 
 export default function Projects() {
+  // State for active tab (UI/UX or Front End Development)
   const [activeTab, setActiveTab] = useState('uiux');
 
+  // Initialize AOS (Animate On Scroll) library
   useEffect(() => {
     AOS.init({
-        duration: 1200, // Animation duration
+      duration: 1200, // Animation duration
     });
-}, []);
+  }, []);
 
   return (
-    <div className="bg-secondary-100 w-full h-auto py-10 px-5 2xl:py-20" id="portfolio">
+    <section className="bg-secondary-100 w-full h-auto py-10 px-5 2xl:py-20" id="portfolio">
       <div className="flex flex-col items-center" data-aos="fade-up">
-        <h3 className="text-secondary-200 pb-5 2xl:text-xl">PORTFOLIO</h3>
-        <h1 className="text-white text-4xl pb-1 font-bold 2xl:text-5xl">My Projects</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-          className="w-12 text-primary_1 rotate-90">
-          <path fillRule="evenodd"
-            d="M4.25 12a.75.75 0 0 1 .75-.75h14a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1-.75-.75Z"
-            clipRule="evenodd" />
-        </svg>
+        {/* Section Header */}
+        <header className="text-center">
+          <h3 className="text-secondary-200 pb-5 2xl:text-xl">PORTFOLIO</h3>
+          <h1 className="text-white text-4xl pb-1 font-bold 2xl:text-5xl">My Projects</h1>
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" 
+            fill="currentColor" 
+            className="w-12 text-primary_1 rotate-90"
+          >
+            <path 
+              fillRule="evenodd" 
+              d="M4.25 12a.75.75 0 0 1 .75-.75h14a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1-.75-.75Z" 
+              clipRule="evenodd" 
+            />
+          </svg>
+        </header>
 
+        {/* Tab Buttons */}
         <div className="border-2 border-primary_1 rounded-full text-primary_1 py-1 px-1 flex items-center">
-          <button className={`font-bold text-xs px-2 border-primary_1 rounded-full p-2 focus:ease-in duration-300 md:text-xl md:py-3 ${activeTab === 'uiux' ? 'bg-primary_1 text-primary_2' : 'bg-transparent text-primary_1'}`}
-            onClick={() => setActiveTab('uiux')}>UI/UX Design</button>
-          <button className={`font-bold text-xs px-2 border-primary_1 rounded-full p-2 focus:ease-in duration-300 md:text-xl md:py-3 ${activeTab === 'frontend' ? 'bg-primary_1 text-primary_2' : 'bg-transparent text-primary_1'}`}
-            onClick={() => setActiveTab('frontend')}>Front End Development</button>
+          <button 
+            className={`font-bold text-xs px-2 border-primary_1 rounded-full p-2 focus:ease-in duration-300 md:text-xl md:py-3 ${activeTab === 'uiux' ? 'bg-primary_1 text-primary_2' : 'bg-transparent text-primary_1'}`}
+            onClick={() => setActiveTab('uiux')}
+          >
+            UI/UX Design
+          </button>
+          <button 
+            className={`font-bold text-xs px-2 border-primary_1 rounded-full p-2 focus:ease-in duration-300 md:text-xl md:py-3 ${activeTab === 'frontend' ? 'bg-primary_1 text-primary_2' : 'bg-transparent text-primary_1'}`}
+            onClick={() => setActiveTab('frontend')}
+          >
+            Front End Development
+          </button>
         </div>
+
+        {/* UI/UX Design Projects */}
         {activeTab === 'uiux' && (
           <div className="text-white mt-5">
             <AllProjectLists
@@ -100,6 +122,8 @@ export default function Projects() {
             />
           </div>
         )}
+
+        {/* Front End Development Projects */}
         {activeTab === 'frontend' && (
           <div className="text-white mt-5">
             <AllProjectLists
@@ -169,6 +193,6 @@ export default function Projects() {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }
