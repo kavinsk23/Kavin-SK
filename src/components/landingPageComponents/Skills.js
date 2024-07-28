@@ -1,121 +1,142 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import bootstrap from "../../assets/images/bootstrap.png";
+import css from "../../assets/images/css.png";
+import enonic from "../../assets/images/enonic.png";
+import figma from "../../assets/images/figma.png";
+import git from "../../assets/images/git.png";
+import html from "../../assets/images/html.png";
+import jira from "../../assets/images/jira.png";
+import js from "../../assets/images/js.png";
+import Optimizely from "../../assets/images/Optimizely.png";
+import postman from "../../assets/images/postman.png";
+import react from "../../assets/images/react.png";
+import redmine from "../../assets/images/redmine.png";
+import sass from "../../assets/images/sass.png";
+import tailwind from "../../assets/images/tailwind.png";
+import browserstack from "../../assets/images/browserstack.png";
+import angular from "../../assets/images/angular.png";
+import mui from "../../assets/images/mui.png";
 
-const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false); // State for mobile menu toggle
-    const navigate = useNavigate();
+export default function Skills() {
 
-    // Function to navigate to the home page
-    const handleNavigate = () => {
-        navigate('/');
-    };
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration
+        });
+    }, []);
 
     return (
-        <nav className="font-comfortaa bg-secondary-100 text-primary_1 sm:bg-primary_1 sm:text-black">
-            <div className="container mx-auto px-4 text-xs font-thin sm:justify-between sm:px-4 sm:py-4 sm:text-sm md:text-base md:w-26 lg:text-lg lg:py-6 lg:font-medium xl:text-2xl xl:py-10 xl:px-16 screen3xl:text-4xl">
-                <div className="flex justify-between items-center py-5">
-                    {/* Mobile "Kavin SK" button */}
-                    <button 
-                        className="text-xl font-bold flex-1 sm:hidden cursor-pointer"
-                        onClick={handleNavigate}
-                    >
-                        Kavin SK
-                    </button>
-
-                    {/* Left side links for larger screens */}
-                    <div className="hidden sm:flex flex-1 justify-start items-center">
-                        <a 
-                            href="#about" 
-                            className="py-2 px-3 md:min-w-26 xl:px-8 2xl:px-12"
-                        >
-                            About me
-                        </a>
-                        <a 
-                            href="#skills" 
-                            className="py-2 px-3 md:min-w-26 xl:px-8 2xl:px-12"
-                        >
-                            Skills
-                        </a>
-                    </div>
-                    
-                    {/* "Kavin SK" button for larger screens, centered */}
-                    <button 
-                        className="nav-buttons font-bold sm:text-2xl sm:w-40 sm:mx-16 md:text-3xl md:w-64 md:px-10 lg:text-4xl lg:w-96 lg:px-16 xl:text-5xl xl:w-96 xl:px-14 font-fra screen3xl:text-7xl screen3xl:w-w108 cursor-pointer"
-                        onClick={handleNavigate}
-                    >
-                        Kavin SK
-                    </button>
-
-                    {/* Right side links for larger screens */}
-                    <div className="hidden sm:flex flex-1 justify-end items-center">
-                        <a 
-                            href="#education" 
-                            className="py-2 px-3 md:min-w-26 xl:px-8 2xl:px-12"
-                        >
-                            Education
-                        </a>
-                        <a 
-                            href="#portfolio" 
-                            className="py-2 px-3 md:min-w-26 xl:px-8 2xl:px-12"
-                        >
-                            Portfolio
-                        </a>
+        <section 
+            className="bg-primary_1 w-full h-auto" 
+            id="skills">
+                <div data-aos="fade-up">
+                    {/* Skill Icons Row 1 */}
+                    <div className="skill-icons-div">
+                        <img 
+                            className="skill-icons" 
+                            src={html} 
+                            alt="HTML"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={css} 
+                            alt="CSS"
+                        />
                     </div>
 
-                    {/* Mobile menu button */}
-                    <div className="sm:hidden flex items-center">
-                        <button 
-                            onClick={() => setIsOpen(!isOpen)} 
-                            className="ml-auto"
-                        >
-                            <svg 
-                                className="w-6 h-6" 
-                                fill="none" 
-                                strokeLinecap="round" 
-                                strokeLinejoin="round" 
-                                strokeWidth={2} 
-                                viewBox="0 0 24 24" 
-                                stroke="currentColor"
-                            >
-                                {isOpen ? (
-                                    <path d="M6 18L18 6M6 6l12 12"></path>
-                                ) : (
-                                    <path d="M4 6h16M4 12h16m-4 6h4"></path>
-                                )}
-                            </svg>
-                        </button>
+                    {/* Skill Icons Row 2 */}
+                    <div className="skill-icons-div">
+                        <img 
+                            className="skill-icons" 
+                            src={react} 
+                            alt="React"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={angular} 
+                            alt="Angular"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={tailwind} 
+                            alt="Tailwind CSS"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={sass} 
+                            alt="SASS"
+                        />
+                    </div>
+
+                    {/* Skill Icons Row 3 */}
+                    <div className="skill-icons-div">
+                        <img 
+                            className="skill-icons" 
+                            src={bootstrap} 
+                            alt="Bootstrap"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={js} 
+                            alt="JavaScript"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={enonic} 
+                            alt="Enonic"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={figma} 
+                            alt="Figma"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={postman} 
+                            alt="Postman"
+                        />
+                    </div>
+
+                    {/* Skill Icons Row 4 */}
+                    <div className="skill-icons-div">
+                        <img 
+                            className="skill-icons" 
+                            src={browserstack} 
+                            alt="BrowserStack"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={Optimizely} 
+                            alt="Optimizely"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={git} 
+                            alt="Git"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={mui} 
+                            alt="Material-UI"
+                        />
+                    </div>
+
+                    {/* Skill Icons Row 5 */}
+                    <div className="skill-icons-div">
+                        <img 
+                            className="skill-icons" 
+                            src={redmine} 
+                            alt="Redmine"
+                        />
+                        <img 
+                            className="skill-icons" 
+                            src={jira} 
+                            alt="Jira"
+                        />
                     </div>
                 </div>
-            </div>
-            {/* Mobile Menu, expanded/collapsed based on 'isOpen' state */}
-            <div className={`${isOpen ? 'block' : 'hidden'} sm:hidden`}>
-                <a 
-                    href="#about" 
-                    className="block py-2 px-4 text-sm"
-                >
-                    About me
-                </a>
-                <a 
-                    href="#skills" 
-                    className="block py-2 px-4 text-sm"
-                >
-                    Skills
-                </a>
-                <a 
-                    href="#education" 
-                    className="block py-2 px-4 text-sm"
-                >
-                    Education
-                </a>
-                <a 
-                    href="#portfolio" 
-                    className="block py-2 px-4 text-sm"
-                >
-                    Portfolio
-                </a>
-            </div>
-        </nav>
+        </section>
     );
-};
-
-export default Navbar;
+}
