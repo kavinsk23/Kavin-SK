@@ -78,7 +78,7 @@ const TestimonialCarousel = () => {
                                 <img 
                                     className="p-5 max-w-80 sm:max-w-96 lg:max-w-w108 2xl:max-w-w120 screen3xl:max-w-w135" 
                                     src={testimonial.image} 
-                                    alt={`Photo of ${testimonial.author}`} 
+                                    alt={`Testimonial from ${testimonial.author}`} 
                                 />
                             </div>
                             

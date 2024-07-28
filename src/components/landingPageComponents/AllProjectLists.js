@@ -10,12 +10,12 @@ export default function AllProjectLists({ img1, img2, titleName, workName, parag
         <img 
           className="w-1/2 shadow-sm" 
           src={img1} 
-          alt={`${workName} - Image 1`} 
+          alt={`${workName} Project preview 1`} 
         />
         <img 
           className="w-1/2 shadow-sm" 
           src={img2} 
-          alt={`${workName} - Image 2`} 
+          alt={`${workName} Project preview 2`} 
         />
       </div>
 
