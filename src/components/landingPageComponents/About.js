@@ -1,5 +1,5 @@
 import React from "react";
-import pic2 from "./images/pro-pic2.jpg"
+import pic2 from "../../assets/images/pro-pic2.jpg"
 
 export default function About() {
     return(

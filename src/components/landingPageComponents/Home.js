@@ -1,5 +1,5 @@
 import React from "react";
-import ProPic from "./images/profile-pic.png"
+import ProPic from "../../assets/images/profile-pic.png"
 
 export default function Home() {
     return(

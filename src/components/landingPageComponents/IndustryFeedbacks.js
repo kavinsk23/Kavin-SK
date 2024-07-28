@@ -2,11 +2,11 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import imarsha from "./images/imarsha.png"
-import sanka from "./images/sanka.png"
-import ushan from "./images/ushan.png"
-import ruchira from "./images/ruchira.png"
-import intervest from "./images/intervest.png"
+import imarsha from "../../assets/images/imarsha.png"
+import sanka from "../../assets/images/sanka.png"
+import ushan from "../../assets/images/ushan.png"
+import ruchira from "../../assets/images/ruchira.png"
+import intervest from "../../assets/images/intervest.png"
 
 const testimonials = [
     {
@@ -37,7 +37,7 @@ const testimonials = [
     },
 
     {
-        id: 3,
+        id: 5,
         image: intervest,
         text: 'We would like to express our sincere gratitude for choosing Intervest on this journey. We trust it has been enriching, we wish you continued success and fulfillment. Best wishes for your next chapter. We hope to welcome you back at Intervest in the future.',
         author: 'Intervest Software Technologies',
