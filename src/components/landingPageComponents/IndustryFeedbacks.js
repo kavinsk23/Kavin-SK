@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -56,29 +58,37 @@ const TestimonialCarousel = () => {
         nextArrow: null,
     };
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration
+        });
+    }, []);
+
     return (
         <Slider {...settings}>
             {testimonials.map((testimonial) => (
                 <div key={testimonial.id} className="feedback-slider bg-primary_2 p-6 flex flex-col justify-center items-center lg:flex-row lg:py-14">
-                    <div className="flex justify-center items-center">
-                        <img className="p-5 max-w-80 sm:max-w-96 lg:max-w-w108 2xl:max-w-w120 screen3xl:max-w-w135" src={testimonial.image} alt=""/>
-                    </div>
-                    <div className="bg-secondary-100 p-2 rounded-md text-xs sm:text-sm md:max-w-w135 md:text-base lg:text-xl lg:max-w-w108 lg:py-10 lg:px-5 xl:text-2xl xl:py-20 2xl:max-w-w120 2xl:py-30 2xl:leading-10 screen3xl:max-w-w135 screen3xl:text-3xl screen3xl:py-32 screen3xl:leading-leading15">
-                        <div>
-                            <svg className="rotate-180 flex justify-start" width="15" height="30" xmlns="http://www.w3.org/2000/svg">
-                                <text x="0" y="24" font-size="35" fill="#D9C5A6">,,</text>
-                            </svg>
+                    <div data-aos="fade-up" className='flex flex-col justify-center items-center lg:flex-row'>
+                        <div className="flex justify-center items-center">
+                            <img className="p-5 max-w-80 sm:max-w-96 lg:max-w-w108 2xl:max-w-w120 screen3xl:max-w-w135" src={testimonial.image} alt=""/>
                         </div>
-                        <div className="text-white leading-8 2xl:leading-10 screen3xl:leading-leading15">
-                            {testimonial.text}
-                        </div>
-                        <div className="flex justify-end">
-                            <svg width="15" height="30" xmlns="http://www.w3.org/2000/svg">
-                                <text x="0" y="24" font-size="35" fill="#D9C5A6">,,</text>
-                            </svg>
-                        </div>
-                        <div className="text-gray-400 pt-2">
-                            {testimonial.author}
+                        <div className="bg-secondary-100 p-2 rounded-md text-xs sm:text-sm md:max-w-w135 md:text-base lg:text-xl lg:max-w-w108 lg:py-10 lg:px-5 xl:text-2xl xl:py-20 2xl:max-w-w120 2xl:py-30 2xl:leading-10 screen3xl:max-w-w135 screen3xl:text-3xl screen3xl:py-32 screen3xl:leading-leading15">
+                            <div>
+                                <svg className="rotate-180 flex justify-start" width="15" height="30" xmlns="http://www.w3.org/2000/svg">
+                                    <text x="0" y="24" font-size="35" fill="#D9C5A6">,,</text>
+                                </svg>
+                            </div>
+                            <div className="text-white leading-8 2xl:leading-10 screen3xl:leading-leading15">
+                                {testimonial.text}
+                            </div>
+                            <div className="flex justify-end">
+                                <svg width="15" height="30" xmlns="http://www.w3.org/2000/svg">
+                                    <text x="0" y="24" font-size="35" fill="#D9C5A6">,,</text>
+                                </svg>
+                            </div>
+                            <div className="text-gray-400 pt-2">
+                                {testimonial.author}
+                            </div>
                         </div>
                     </div>
                 </div>

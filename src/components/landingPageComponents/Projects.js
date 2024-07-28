@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect,useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import AllProjectLists from "./AllProjectLists";
 import schmob1 from "../../assets/images/school-mob-1.png";
 import schweb1 from "../../assets/images/school-web-1.png";
@@ -30,9 +32,15 @@ import pos7 from "../../assets/images/pos7.png";
 export default function Projects() {
   const [activeTab, setActiveTab] = useState('uiux');
 
+  useEffect(() => {
+    AOS.init({
+        duration: 1200, // Animation duration
+    });
+}, []);
+
   return (
     <div className="bg-secondary-100 w-full h-auto py-10 px-5 2xl:py-20" id="portfolio">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center" data-aos="fade-up">
         <h3 className="text-secondary-200 pb-5 2xl:text-xl">PORTFOLIO</h3>
         <h1 className="text-white text-4xl pb-1 font-bold 2xl:text-5xl">My Projects</h1>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
