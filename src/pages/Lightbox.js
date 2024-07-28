@@ -20,7 +20,7 @@ const Lightbox = ({ images, photoIndex, setPhotoIndex, onClose }) => {
       </button>
       <img 
         src={images[photoIndex]} 
-        alt={`Lightbox image ${photoIndex + 1}`} 
+        alt="" // Empty alt for decorative images
         className="max-w-full max-h-full" 
       />
       <button onClick={nextImage} className="absolute right-5 text-white text-3xl">

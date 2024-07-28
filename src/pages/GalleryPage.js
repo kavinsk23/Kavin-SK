@@ -229,7 +229,7 @@ export default function GalleryPage() {
           >
             <img
               src={image}
-              alt={`Gallery image ${index + 1}`}
+              alt="" // Empty alt for decorative images
               className="w-full h-full object-cover"
             />
           </div>
