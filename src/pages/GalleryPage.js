@@ -173,7 +173,7 @@ const imageSets = {
     ],
     text: "Visit",
     links: [
-      { url: "https://.bodimkarayo.lk/", label: "Bodimkarayo" },
+      { url: "https://bodimkarayo.lk/", label: "Bodimkarayo" },
     ]
   },
   gallery13: {
@@ -229,6 +229,7 @@ export default function GalleryPage() {
           >
             <img
               src={image}
+              alt={`Gallery image ${index + 1}`}
               className="w-full h-full object-cover"
             />
           </div>
