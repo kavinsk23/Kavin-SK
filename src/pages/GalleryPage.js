@@ -229,7 +229,6 @@ export default function GalleryPage() {
           >
             <img
               src={image}
-              alt={`Gallery Image ${index + 1}`}
               className="w-full h-full object-cover"
             />
           </div>
