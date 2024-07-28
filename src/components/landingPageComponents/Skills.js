@@ -14,6 +14,8 @@ import redmine from "../../assets/images/redmine.png"
 import sass from "../../assets/images/sass.png"
 import tailwind from "../../assets/images/tailwind.png"
 import browserstack from "../../assets/images/browserstack.png"
+import angular from "../../assets/images/angular.png"
+import mui from "../../assets/images/mui.png"
 
 export default function Skills() {
     return (
@@ -25,6 +27,7 @@ export default function Skills() {
 
             <div className="skill-icons-div">
                 <img className="skill-icons" src={react} alt=""/>
+                <img className="skill-icons" src={angular} alt=""/>
                 <img className="skill-icons" src={tailwind} alt=""/>
                 <img className="skill-icons" src={sass} alt=""/>
             </div>
@@ -41,6 +44,7 @@ export default function Skills() {
                 <img className="skill-icons" src={browserstack} alt=""/>
                 <img className="skill-icons" src={Optimizely} alt=""/>
                 <img className="skill-icons" src={git} alt=""/>
+                <img className="skill-icons" src={mui} alt=""/>
             </div>
 
             <div className="skill-icons-div">

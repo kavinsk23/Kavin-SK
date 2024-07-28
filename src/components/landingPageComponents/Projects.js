@@ -22,6 +22,10 @@ import shoe1 from "../../assets/images/shoe1.jpg";
 import shoe2 from "../../assets/images/shoe2.jpg";
 import tours1 from "../../assets/images/tours1.jpg";
 import tours2 from "../../assets/images/tours2.jpg";
+import bodimkarayo1 from "../../assets/images/bodimkarayo1.png";
+import bodimkarayo2 from "../../assets/images/bodimkarayo2.png";
+import pos1 from "../../assets/images/pos1.png";
+import pos7 from "../../assets/images/pos7.png";
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState('uiux');
@@ -90,6 +94,22 @@ export default function Projects() {
         )}
         {activeTab === 'frontend' && (
           <div className="text-white mt-5">
+            <AllProjectLists
+              img1={bodimkarayo1}
+              img2={bodimkarayo2}
+              titleName="Front End Development"
+              workName="Bodimkarayo"
+              paragraph="I developed the front end of a comprehensive web application built with React, MUI, and Tailwind CSS to connect users with potential roommates and properties. Features include an interactive map with Leaflet for property location, secure authentication, and profile management. Users can browse, filter, and view detailed property listings. The project is showcased on GitHub and the product is on live."
+              galleryId="gallery12"
+            />
+            <AllProjectLists
+              img1={pos1}
+              img2={pos7}
+              titleName="Front End Development"
+              workName="Happy Sales"
+              paragraph="I developed a POS web application frontend using Angular and TypeScript, integrating dynamic invoice management with jsPDF and html2canvas for PDF generation. The project features seamless Bluetooth printing via the Thermer app, enhancing billing and sales management. The frontend design utilizes Tailwind CSS for responsive UI, and the application ensures smooth user experience with optimized performance. Product is working even offiline. Technologies used include Angular, TypeScript, jsPDF, html2canvas, and Tailwind CSS."
+              galleryId="gallery13"
+            />
             <AllProjectLists
               img1={portfolio1}
               img2={portfolio2}
