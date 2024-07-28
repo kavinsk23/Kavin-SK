@@ -45,6 +45,7 @@ import pos5 from "../assets/images/pos5.png";
 import pos6 from "../assets/images/pos6.png";
 import pos7 from "../assets/images/pos7.png";
 
+// Define the image sets for different galleries
 const imageSets = {
   gallery1: {
     images: [
@@ -61,7 +62,10 @@ const imageSets = {
     ],
     text: "",
     links: [
-      { url: "", label: "" },
+      { 
+        url: "", 
+        label: "" 
+      },
     ]
   },
   gallery2: {
@@ -74,7 +78,10 @@ const imageSets = {
     ],
     text: "",
     links: [
-      { url: "", label: "" },
+      { 
+        url: "", 
+        label: "" 
+      },
     ]
   },
   // Add more gallery image sets here
@@ -86,7 +93,10 @@ const imageSets = {
     ],
     text: "",
     links: [
-      { url: "", label: "" },
+      { 
+        url: "", 
+        label: "" 
+      },
     ]
   },
   gallery4: {
@@ -96,7 +106,10 @@ const imageSets = {
     ],
     text: "",
     links: [
-      { url: "", label: "" },
+      { 
+        url: "", 
+        label: "" 
+      },
     ]
   },
   gallery5: {
@@ -106,14 +119,20 @@ const imageSets = {
     ],
     text: "",
     links: [
-      { url: "", label: "" },
+      { 
+        url: "", 
+        label: "" 
+      },
     ]
   },
   gallery6: {
     images: [],
     text: "Visit",
     links: [
-      { url: "https://kavinsk.com/", label: "Kavin SK" },
+      { 
+        url: "https://kavinsk.com/", 
+        label: "Kavin SK" 
+      },
     ]
   },
   gallery7: {
@@ -123,7 +142,10 @@ const imageSets = {
     ],
     text: "",
     links: [
-      { url: "", label: "" },
+      { 
+        url: "", 
+        label: "" 
+      },
     ]
   },
   gallery8: {
@@ -132,7 +154,10 @@ const imageSets = {
     ],
     text: "",
     links: [
-      { url: "", label: "" },
+      { 
+        url: "", 
+        label: "" 
+      },
     ]
   },
   gallery9: {
@@ -141,21 +166,30 @@ const imageSets = {
     ],
     text: "",
     links: [
-      { url: "", label: "" },
+      { 
+        url: "", 
+        label: "" 
+      },
     ]
   },
   gallery10: {
     images: [],
     text: "",
     links: [
-      { url: "", label: "" },
+      { 
+        url: "", 
+        label: "" 
+      },
     ]
   },
   gallery11: {
     images: [],
     text: "",
     links: [
-      { url: "", label: "" },
+      { 
+        url: "", 
+        label: "" 
+      },
     ]
   },
   gallery12: {
@@ -173,7 +207,10 @@ const imageSets = {
     ],
     text: "Visit",
     links: [
-      { url: "https://bodimkarayo.lk/", label: "Bodimkarayo" },
+      { 
+        url: "https://bodimkarayo.lk/", 
+        label: "Bodimkarayo" 
+      },
     ]
   },
   gallery13: {
@@ -188,7 +225,10 @@ const imageSets = {
     ],
     text: "Visit (Admin Only)",
     links: [
-      { url: "http://happysales.lk", label: "Happy Sales" },
+      { 
+        url: "http://happysales.lk", 
+        label: "Happy Sales" 
+      },
     ]
   }
 };
@@ -202,6 +242,7 @@ export default function GalleryPage() {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
+  // Function to open the lightbox at a specific image index
   const openLightbox = (index) => {
     setPhotoIndex(index);
     setIsOpen(true);
@@ -209,18 +250,24 @@ export default function GalleryPage() {
 
   return (
     <div className="container mx-auto py-10 bg-secondary-100">
+      {/* Display gallery text and links if available */}
       {galleryText && (
         <p className="text-center text-white font-bold text-xl pb-10">
           {galleryText}
           {galleryLinks.map((link, index) => (
             <span key={index}>
               {" "}
-              <a href={link.url} className="text-blue-500 underline">{link.label}</a>
+              <a 
+                href={link.url} 
+                className="text-blue-500 underline">
+                  {link.label}
+              </a>
             </span>
           ))}
         </p>
       )}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4">
+        {/* Render gallery images */}
         {images.map((image, index) => (
           <div
             key={index}
@@ -236,6 +283,7 @@ export default function GalleryPage() {
         ))}
       </div>
 
+      {/* Render Lightbox component if the lightbox is open */}
       {isOpen && (
         <Lightbox
           images={images}
