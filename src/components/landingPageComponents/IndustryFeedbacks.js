@@ -69,9 +69,11 @@ const TestimonialCarousel = () => {
                     <article 
                         key={testimonial.id} 
                         className="feedback-slider bg-primary_2 p-6 flex flex-col justify-center items-center lg:flex-row lg:py-14" 
-                        data-aos="fade-up"
                     >
-                        <div className='flex flex-col justify-center items-center lg:flex-row'>
+                        <div 
+                            className='flex flex-col justify-center items-center lg:flex-row'
+                            data-aos="fade-up"
+                            >
                             
                             {/* Testimonial Image */}
                             <div className="flex justify-center items-center">
