@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Lightbox from './Lightbox';
 import eLearningdesktop1 from "../assets/images/eLearning-desktop1.png";
 import eLearningdesktop2 from "../assets/images/eLearning-desktop2.png";
@@ -195,7 +195,6 @@ const imageSets = {
 
 export default function GalleryPage() {
   const { galleryId } = useParams();
-  const location = useLocation();
   const gallery = imageSets[galleryId] || { images: [], text: '', links: [] };
   const images = gallery.images;
   const galleryText = gallery.text;

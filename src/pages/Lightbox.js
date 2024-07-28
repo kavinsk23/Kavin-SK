@@ -18,7 +18,7 @@ const Lightbox = ({ images, photoIndex, setPhotoIndex, onClose }) => {
       <button onClick={prevImage} className="absolute left-5 text-white text-3xl">
         <FaArrowLeft />
       </button>
-      <img src={images[photoIndex]} alt={`Lightbox Image ${photoIndex + 1}`} className="max-w-full max-h-full" />
+      <img src={images[photoIndex]} className="max-w-full max-h-full" />
       <button onClick={nextImage} className="absolute right-5 text-white text-3xl">
         <FaArrowRight />
       </button>
