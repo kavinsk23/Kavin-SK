@@ -18,6 +18,8 @@ import tailwind from "../../assets/images/tailwind.png";
 import browserstack from "../../assets/images/browserstack.png";
 import angular from "../../assets/images/angular.png";
 import mui from "../../assets/images/mui.png";
+import next from "../../assets/images/nextjs.png";
+import storybook from "../../assets/images/storybook.png";
 
 export default function Skills() {
 
@@ -44,6 +46,11 @@ export default function Skills() {
                             src={css} 
                             alt="CSS"
                         />
+                        <img 
+                            className="skill-icons" 
+                            src={js} 
+                            alt="JavaScript"
+                        />
                     </div>
 
                     {/* Skill Icons Row 2 */}
@@ -60,18 +67,23 @@ export default function Skills() {
                         />
                         <img 
                             className="skill-icons" 
-                            src={tailwind} 
-                            alt="Tailwind CSS"
+                            src={next} 
+                            alt="next"
                         />
                         <img 
                             className="skill-icons" 
-                            src={sass} 
-                            alt="SASS"
+                            src={tailwind} 
+                            alt="Tailwind CSS"
                         />
                     </div>
 
                     {/* Skill Icons Row 3 */}
                     <div className="skill-icons-div">
+                    <img 
+                            className="skill-icons" 
+                            src={storybook} 
+                            alt="storybook"
+                        />
                         <img 
                             className="skill-icons" 
                             src={bootstrap} 
@@ -79,14 +91,10 @@ export default function Skills() {
                         />
                         <img 
                             className="skill-icons" 
-                            src={js} 
-                            alt="JavaScript"
+                            src={sass} 
+                            alt="SASS"
                         />
-                        <img 
-                            className="skill-icons" 
-                            src={enonic} 
-                            alt="Enonic"
-                        />
+                        
                         <img 
                             className="skill-icons" 
                             src={figma} 
@@ -125,6 +133,11 @@ export default function Skills() {
 
                     {/* Skill Icons Row 5 */}
                     <div className="skill-icons-div">
+                    <img 
+                            className="skill-icons" 
+                            src={enonic} 
+                            alt="Enonic"
+                        />
                         <img 
                             className="skill-icons" 
                             src={redmine} 

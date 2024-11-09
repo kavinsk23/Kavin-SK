@@ -79,11 +79,9 @@ export default function Home() {
 
                     <div className="lg:py-24 pr-3 2xl:py-44 2xl:pr-16 screen3xl:py-60">
                         <div>
-                            <h3 className="text-white pb-3 sm:text-2xl sm:pb-5 lg:text-3xl xl:text-5xl xl:leading-leading15 screen3xl:text-6xl screen3xl:leading-leading20 screen3xl:pb-14">Professional UI/UX Engineer</h3>
+                            <h3 className="text-white pb-3 sm:text-2xl sm:pb-5 lg:text-3xl xl:text-5xl xl:leading-leading15 screen3xl:text-6xl screen3xl:leading-leading20 screen3xl:pb-14">Professional Frontend Developer</h3>
                             <p className="text-secondary-200 pb-5 text-xs max-w-96 sm:text-base sm:max-w-max lg:text-lg xl:text-2xl screen3xl:text-3xl leading-5">As a
-                                professional UI/UX engineer, I specialize in creating intuitive and visually compelling
-                                digital experiences. My expertise lies in blending design aesthetics with user-centric
-                                functionality to craft seamless interfaces that captivate and guide users effectively.</p>
+                                I am a professional Front-End Developer and UI/UX Engineer, specializing in creating intuitive and visually compelling digital experiences. My expertise lies in blending design aesthetics with user-centric functionality to build seamless interfaces that captivate and guide users effectively.</p>
                         </div>
                         <div className="text-primary_1 flex sm:hidden items-center">
                             <h2 className="pr-2 sm:text-2xl">Let's Talk </h2>

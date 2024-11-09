@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import pic2 from "../../assets/images/pro-pic2.jpg";
+import pic2 from "../../assets/images/graducation-dp.jpeg";
 
 export default function About() {
     // Initialize AOS (Animate On Scroll) library
@@ -47,11 +47,7 @@ export default function About() {
                             {/* About Me Section */}
                             <h3 className="text-primary_1 flex justify-center pb-5 text-lg lg:text-xl w-full lg:pl-4 xl:pl-0 lg:justify-start 2xl:text-2xl screen3xl:text-3xl">About Me</h3>
                             <p className="text-secondary-200 pb-5 text-sm sm:text-base lg:text-lg xl:text-xl xl:w-auto 2xl:text-2xl screen3xl:text-3xl leading-5 text-center lg:max-w-96 xl:max-w-max lg:text-left 2xl:pb-7">
-                                Hi, I’m Kavin Sashantha, a final year CS student at the University of Westminster, passionate about
-                                UI/UX development and design. I specialize in creating intuitive, visually stunning interfaces that
-                                prioritize user experience. As a good team player and leader, I thrive on collaborative projects.
-                                Always willing to learn and fueled by creativity, I’m excited to innovate and push boundaries in the
-                                digital world.
+                            Hi, I’m Kavin Sashantha, a Computer Science graduate with second upper honors from the University of Westminster, specializing in front-end development and UI/UX design. I create intuitive, visually appealing interfaces with a strong focus on user experience. As a collaborative team player and leader, I thrive in dynamic projects. Keen to learn and stay updated, I’m driven by creativity and a passion for innovation in the digital world.
                             </p>
                         </div>
 
