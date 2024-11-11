@@ -44,6 +44,18 @@ import pos4 from "../assets/images/pos4.png";
 import pos5 from "../assets/images/pos5.png";
 import pos6 from "../assets/images/pos6.png";
 import pos7 from "../assets/images/pos7.png";
+import af1 from "../assets/images/af-1.jpeg";
+import af2 from "../assets/images/af-2.jpeg";
+import fw1 from "../assets/images/fw1.png";
+import fw2 from "../assets/images/fw2.png";
+import fw3 from "../assets/images/fw3.png";
+import fw4 from "../assets/images/fw4.png";
+import sb1 from "../assets/images/sb1.jpeg";
+import sb2 from "../assets/images/sb2.jpeg";
+import sb3 from "../assets/images/sb3.jpeg";
+import sb4 from "../assets/images/sb4.jpeg";
+import sb5 from "../assets/images/sb5.jpeg";
+import sb6 from "../assets/images/sb6.jpeg";
 
 // Define the image sets for different galleries
 const imageSets = {
@@ -84,7 +96,6 @@ const imageSets = {
       },
     ]
   },
-  // Add more gallery image sets here
   gallery3: {
     images: [
       fuellApp1,
@@ -230,7 +241,52 @@ const imageSets = {
         label: "Happy Sales" 
       },
     ]
-  }
+  },
+  gallery14: {
+    images: [
+      af1,
+      af2,
+    ],
+    text: "Visit",
+    links: [
+      { 
+        url: "http://alignmentchecker.kavinsk.com/", 
+        label: "Alignment Checker" 
+      },
+    ]
+  },
+  gallery15: {
+    images: [
+      fw1,
+      fw2,
+      fw3,
+      fw4,
+    ],
+    text: "Visit",
+    links: [
+      { 
+        url: "http://openframework.kavinsk.com/", 
+        label: "Next Tailwind Framework" 
+      },
+    ]
+  },
+  gallery16: {
+    images: [
+      sb1,
+      sb2,
+      sb3,
+      sb4,
+      sb5,
+      sb6,
+    ],
+    text: "",
+    links: [
+      { 
+        url: "", 
+        label: "" 
+      },
+    ]
+  },
 };
 
 export default function GalleryPage() {

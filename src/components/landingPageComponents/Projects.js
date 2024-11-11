@@ -28,6 +28,12 @@ import bodimkarayo1 from "../../assets/images/bodimkarayo1.png";
 import bodimkarayo2 from "../../assets/images/bodimkarayo2.png";
 import pos1 from "../../assets/images/pos1.png";
 import pos7 from "../../assets/images/pos7.png";
+import af1 from "../../assets/images/af-1.jpeg";
+import af2 from "../../assets/images/af-2.jpeg";
+import fw1 from "../../assets/images/fw1.png";
+import fw2 from "../../assets/images/fw2.png";
+import sb1 from "../../assets/images/sb1.jpeg";
+import sb2 from "../../assets/images/sb2.jpeg";
 
 export default function Projects() {
   // State for active tab (UI/UX or Front End Development)
@@ -126,6 +132,30 @@ export default function Projects() {
         {/* Front End Development Projects */}
         {activeTab === 'frontend' && (
           <div className="text-white mt-5">
+            <AllProjectLists
+              img1={sb1}
+              img2={sb2}
+              titleName="Front End Development"
+              workName="Storybook Components"
+              paragraph="I integrated Storybook into a React project using the Atomic Design methodology to organize UI components into Atoms, Molecules, Organisms, and Templates. This approach allows components to be developed, tested, and documented in isolation, ensuring consistency and reusability across the application. Atoms include basic UI elements like buttons and input fields, while Molecules combine these to form more complex components such as form fields and card elements. Organisms are larger, reusable sections like navigation bars or product cards. Templates define page layouts using these components. The Storybook setup enhances collaboration with UI/UX designers, making it easier to maintain and scale the front-end codebase. "
+              galleryId="gallery16"
+            />
+            <AllProjectLists
+              img1={fw1}
+              img2={fw2}
+              titleName="Front End Development"
+              workName="Next & Tailwind Framework"
+              paragraph="I've completed building a powerful desktop-focused framework using Next.js and Tailwind CSS, specifically optimized for desktop applications."
+              galleryId="gallery15"
+            />
+            <AllProjectLists
+              img1={af1}
+              img2={af2}
+              titleName="Front End Development"
+              workName="Alignment Checker"
+              paragraph="I’ve built a handy tool to help front-end developers and UI/UX designers quickly verify the vertical alignment of HTML elements, making it easier to spot and fix inconsistencies in layout and design. Whether you're working on a simple webpage or a complex UI, this tool visually highlights margins and padding with color-coded vertical lines."
+              galleryId="gallery14"
+            />
             <AllProjectLists
               img1={bodimkarayo1}
               img2={bodimkarayo2}
